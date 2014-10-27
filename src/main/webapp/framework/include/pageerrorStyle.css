@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+
+.ui-state-error {
+	overflow: hidden;
+}
+
+.ui-state-error table {
+	align: center;
+	width: 100%;
+	height: 100%;
+	align: center;
+}
+
+.ui-state-error table tr {
+	width: 100%;
+	height: 100%;
+}
+
+.ui-state-error table tr td {
+	valign: top;
+	width: 100%;
+	align: center"
+}
+
+.ui-state-error-text {
+	width: 400;
+	height: 100;
+	scroll: on;
+	overflow: auto;
+	border-right: 1px solid #bbb;
+	border-left: 1px solid #bbb;
+	border-top: 1px solid #bbb;
+	border-bottom: 1px solid #bbb;
+}

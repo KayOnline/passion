@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DBQueryList>
+	<DBQuery queryType="FUNC_DATASET" queryObject="TEST" queryName="FUNC_TEST"
+		queryDescription="检索基本信息" queryDbType="ORACLE" queryAuthor="KAY"
+		prepareQuery="{ ? = call TEST(?, ?) }">
+		<queryParameter sequence="1" jdbcType="12"
+			javaType="java.lang.String" inOut="OUT" dataType="VARCHAR2"
+			argumentName="null" />
+		<queryParameter sequence="2" jdbcType="12"
+			javaType="java.lang.String" inOut="IN" dataType="VARCHAR2"
+			argumentName="PARAM1" />
+		<queryParameter sequence="3" jdbcType="12"
+			javaType="java.lang.String" inOut="OUT" dataType="VARCHAR2"
+			argumentName="PARAM2" />
+	</DBQuery>
+</DBQueryList>

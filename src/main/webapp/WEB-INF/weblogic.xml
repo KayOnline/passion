@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weblogic-web-app>
+	<container-descriptor>
+	
+		<!-- The prefer-web-inf-classes element, if set to true, will cause classes 
+			located in the WEB-INF directory of a Web application to be loaded in preference 
+			to classes loaded in the application or system classloader. The default value 
+			is false. A value specified in the Administration Console will take precedence 
+			over a value set manually. -->
+		<prefer-web-inf-classes>true</prefer-web-inf-classes>
+		
+
+		<!-- The servlet-reload-check-secs element defines whether a WebLogic
+			Server will check to see if a servlet has been modified, and if it has
+			been modified, reloads it.
+			
+			1.The value -1 means never check the servlets. This is the default value in
+			a production environment.
+	
+			2.The value 0 means always check the servlets.
+	
+			3.The value 1 means check the servlets every second. This is the default
+			value in a development environment.
+	
+			A value specified in the Administration Console will always take
+			precedence over a manually specified value. -->
+		<servlet-reload-check-secs>-1</servlet-reload-check-secs>
+		
+		
+	</container-descriptor>
+</weblogic-web-app>

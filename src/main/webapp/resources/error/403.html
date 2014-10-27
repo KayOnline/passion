@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>403 Page</title>
+</head>
+
+<body>
+	<big>403 Forbidden</big>
+	<span id="time">5</span> 秒后自动回到<a href="/login.jsp">登录页面</a>
+</body>
+</html>
+<script type="text/javascript">
+	setInterval("settime()",1000);
+	var i=5;
+	function settime() {
+	   i--;
+	   time.innerHTML="<font color='red'>"+i+"</font>";
+	   if(i<=0) {
+	     location.href="login.jsp"; 
+	   }
+	}
+</script>
+

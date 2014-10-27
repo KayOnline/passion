@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="gb2312"?>
+<procList>
+    <procedure name="JL_F_ASSETS_ENTRY_STORE"
+        preparedSql="{ ?= call JL_F_ASSETS_ENTRY_STORE( ? , ? , ? , ? )}"
+        procDescription="新购资产入库" retFlag="true">
+        <procParam paramInOutType="5" paramName="" paramSn="1" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_PLAN_ID" paramSn="2" paramSqlType="3"/>
+        <procParam paramInOutType="1" paramName="IN_OPERATOR"
+            paramSn="3" paramSqlType="-1"/>
+        <procParam paramInOutType="1" paramName="IN_BUSI_CODE"
+            paramSn="4" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_AREA_CODE"
+            paramSn="5" paramSqlType="12"/>
+    </procedure>
+    <procedure name="JL_F_ASSETS_TRANSFER"
+        preparedSql="{ ?= call JL_F_ASSETS_TRANSFER( ? , ? , ? , ? )}"
+        procDescription="资产转库" retFlag="true">
+        <procParam paramInOutType="5" paramName="" paramSn="1" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_APP_NO" paramSn="2" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_BUSI" paramSn="3" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_WAREHOUSE_ID"
+            paramSn="4" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_OPERATOR_CODE"
+            paramSn="5" paramSqlType="12"/>
+    </procedure>
+    <procedure name="jl_f_assets_switch_list"
+        preparedSql="{ ?= call jl_f_assets_switch_list( ? , ? , ? , ? , ? )}"
+        procDescription="资产领取" retFlag="true">
+        <procParam paramInOutType="5" paramName="" paramSn="1" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_CHA_MAN" paramSn="2" paramSqlType="3"/>
+        <procParam paramInOutType="1" paramName="IN_BEGIN_FACTORY_NO"
+            paramSn="3" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_END_FACTORY_NO"
+            paramSn="4" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_BUSINESS_PLACE_CODE"
+            paramSn="5" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_OPERATOR"
+            paramSn="6" paramSqlType="3"/>
+    </procedure>
+    <procedure name="jl_f_return_old_assets_list"
+        preparedSql="{ ?= call jl_f_return_old_assets_list( ? , ? )}"
+        procDescription="计量退旧资产统计" retFlag="true">
+        <procParam paramInOutType="5" paramName="" paramSn="1" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_APP_STR" paramSn="2" paramSqlType="12"/>
+        <procParam paramInOutType="1" paramName="IN_BUSI_CODE"
+            paramSn="3" paramSqlType="12"/>
+    </procedure>
+</procList>
