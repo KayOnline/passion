@@ -5,11 +5,15 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.kay</groupId>
 	<artifactId>passion</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 
 	<packaging>war</packaging>
-	<name />
-	<description />
+	<name>passion</name>
+	<description>
+		passion project using easyui and spring mvc framework.
+	</description>
+	
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
