@@ -1,4 +1,4 @@
 passion
 =======
 
-a project use spring mvc with jpa
+a project use spring mvc with jpa.
